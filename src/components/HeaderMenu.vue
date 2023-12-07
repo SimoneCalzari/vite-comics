@@ -61,7 +61,7 @@ export default {
 
 <template>
   <ul class="flex">
-    <li v-for="link in links">
+    <li v-for="link in links" class="upper">
       <a :href="link.href" :target="link.target">{{ link.title }}</a>
     </li>
   </ul>
@@ -75,8 +75,10 @@ ul {
   gap: 30px;
   a {
     line-height: 115px;
-    text-transform: uppercase;
     font-size: 12px;
+    color: black;
+    display: block;
+    height: 100%;
     &:hover {
       color: $primary-color;
       border-bottom: 5px solid $primary-color;

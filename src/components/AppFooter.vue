@@ -1,9 +1,16 @@
 <script>
-export default {};
+import FooterTop from "./FooterTop.vue";
+export default {
+  components: {
+    FooterTop,
+  },
+};
 </script>
 
 <template>
-  <footer></footer>
+  <footer>
+    <FooterTop />
+  </footer>
 </template>
 
-<style scoped></style>
+<style scoped lang="scss"></style>
