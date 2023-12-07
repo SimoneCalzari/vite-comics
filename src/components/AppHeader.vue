@@ -1,6 +1,6 @@
 <script>
-import HeaderLogo from "./HeaderLogo.vue";
-import HeaderMenu from "./HeaderMenu.vue";
+import HeaderLogo from "./head-comps/HeaderLogo.vue";
+import HeaderMenu from "./head-comps/HeaderMenu.vue";
 export default {
   components: {
     HeaderLogo,

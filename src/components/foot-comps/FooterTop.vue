@@ -7,26 +7,31 @@ export default {
           img: "/img/buy-comics-digital-comics.png",
           text: "digital comics",
           href: "#",
+          target: "_self",
         },
         {
           img: "/img/buy-comics-merchandise.png",
           text: "dc merchandise",
           href: "#",
+          target: "_self",
         },
         {
           img: "/img/buy-comics-subscriptions.png",
           text: "subscription",
           href: "#",
+          target: "_self",
         },
         {
           img: "/img/buy-comics-shop-locator.png",
           text: "comic shop locator",
           href: "#",
+          target: "_self",
         },
         {
           img: "/img/buy-dc-power-visa.svg",
           text: "dc power visa",
           href: "#",
+          target: "_self",
         },
       ],
     };
@@ -42,7 +47,9 @@ export default {
           <div class="img-box">
             <img :src="merch.img" alt="merch.text" />
           </div>
-          <a :href="merch.href" class="upper">{{ merch.text }}</a>
+          <a :href="merch.href" :target="merch.target" class="upper">{{
+            merch.text
+          }}</a>
         </li>
       </ul>
     </div>
@@ -50,9 +57,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../styles/_partials/utilities.scss";
-@use "../styles/_partials/container.scss";
-@use "../styles/_partials/variables.scss" as *;
+@use "../../styles/_partials/utilities.scss";
+@use "../../styles/_partials/container.scss";
+@use "../../styles/_partials/variables.scss" as *;
 
 .footer-top {
   background-color: $primary-color;
