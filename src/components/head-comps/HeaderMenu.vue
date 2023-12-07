@@ -79,6 +79,7 @@ ul {
     color: black;
     display: block;
     height: 100%;
+    font-weight: bold;
     &:hover {
       color: $primary-color;
       border-bottom: 5px solid $primary-color;

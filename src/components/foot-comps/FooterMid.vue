@@ -202,7 +202,7 @@ export default {
 
 .container {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   gap: 40px;
   background-image: url(../../../public/img/dc-logo-bg.png);
   background-repeat: no-repeat;
