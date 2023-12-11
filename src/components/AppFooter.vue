@@ -18,5 +18,3 @@ export default {
     <FooterBottom />
   </footer>
 </template>
-
-<style scoped lang="scss"></style>

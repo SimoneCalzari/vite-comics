@@ -7,7 +7,7 @@ export default {};
 </template>
 
 <style scoped lang="scss">
-@use "../../assets/css/_partials/variables" as *;
+@use "../../assets/scss/partials/variables" as *;
 button {
   background-color: $primary-color;
   color: white;

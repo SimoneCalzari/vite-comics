@@ -17,5 +17,3 @@ export default {
   <AppMain />
   <AppFooter />
 </template>
-
-<style lang="scss"></style>

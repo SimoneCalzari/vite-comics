@@ -192,7 +192,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../../assets/css/_partials/variables" as *;
+@use "../../assets/scss/partials/variables" as *;
 
 .footer-mid {
   background-image: url("../../assets/img/footer-bg.jpg");

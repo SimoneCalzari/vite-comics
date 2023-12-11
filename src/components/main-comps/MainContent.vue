@@ -114,7 +114,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../../assets/css/_partials/variables" as *;
+@use "../../assets/scss/partials/variables" as *;
 h2 {
   font-size: 22px;
   color: white;

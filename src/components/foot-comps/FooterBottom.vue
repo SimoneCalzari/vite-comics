@@ -19,7 +19,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../../assets/css/_partials/variables" as *;
+@use "../../assets/scss/partials/variables" as *;
 
 .footer-bottom {
   padding: 30px 0;
