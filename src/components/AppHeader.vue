@@ -19,9 +19,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../styles/_partials/container.scss";
-@use "../styles/_partials/utilities.scss";
-
 .container {
   justify-content: space-between;
 }

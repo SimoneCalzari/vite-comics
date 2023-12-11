@@ -192,19 +192,17 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../../styles/_partials/utilities.scss";
-@use "../../styles/_partials/container.scss";
-@use "../../styles/_partials/variables.scss" as *;
+@use "../../assets/css/_partials/variables" as *;
 
 .footer-mid {
-  background-image: url("../../../public/img/footer-bg.jpg");
+  background-image: url("../../assets/img/footer-bg.jpg");
 }
 
 .container {
   padding-top: 20px;
   padding-bottom: 40px;
   gap: 40px;
-  background-image: url(../../../public/img/dc-logo-bg.png);
+  background-image: url("../../assets/img/dc-logo-bg.png");
   background-repeat: no-repeat;
   background-position: right center;
   background-size: 50%;

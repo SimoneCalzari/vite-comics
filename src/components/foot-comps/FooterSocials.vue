@@ -4,27 +4,27 @@ export default {
     return {
       linkSocial: [
         {
-          img: "/img/footer-facebook.png",
+          img: "/src/assets/img/footer-facebook.png",
           alt: "Facebook logo",
           href: "#",
         },
         {
-          img: "/img/footer-twitter.png",
+          img: "/src/assets/img/footer-twitter.png",
           alt: "Twitter logo",
           href: "#",
         },
         {
-          img: "/img/footer-youtube.png",
+          img: "/src/assets/img/footer-youtube.png",
           alt: "Yuotube logo",
           href: "#",
         },
         {
-          img: "/img/footer-pinterest.png",
+          img: "/src/assets/img/footer-pinterest.png",
           alt: "Pinterest logo",
           href: "#",
         },
         {
-          img: "/img/footer-periscope.png",
+          img: "/src/assets/img/footer-periscope.png",
           alt: "Periscope logo",
           href: "#",
         },
@@ -48,8 +48,7 @@ export default {
 </template>
 
 <style scoped lang="scss">
-@use "../../styles/_partials/utilities.scss";
-@use "../../styles/_partials/variables.scss" as *;
+@use "../../assets/css/_partials/variables" as *;
 
 .socials {
   align-items: center;
