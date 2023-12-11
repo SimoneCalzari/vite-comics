@@ -1,18 +1,24 @@
 <script>
-export default {};
+import MainJumbo from "./main-comps/MainJumbo.vue";
+import MainContent from "./main-comps/MainContent.vue";
+export default {
+  components: {
+    MainJumbo,
+    MainContent,
+  },
+};
 </script>
 
 <template>
   <main>
-    <div class="container"></div>
+    <MainJumbo />
+    <MainContent />
   </main>
 </template>
 
 <style scoped lang="scss">
 @use "../assets/css/_partials/variables" as *;
-
 main {
-  height: 150px;
   background-color: $main-bkg;
 }
 </style>
