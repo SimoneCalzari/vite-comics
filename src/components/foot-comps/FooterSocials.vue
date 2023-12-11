@@ -1,30 +1,40 @@
 <script>
 export default {
+  methods: {
+    getImagePath: function (imgPath) {
+      return new URL(imgPath, import.meta.url).href;
+    },
+  },
   data() {
     return {
       linkSocial: [
         {
-          img: "/src/assets/img/footer-facebook.png",
+          // img: "/src/assets/img/footer-facebook.png",
+          img: "../../assets/img/footer-facebook.png",
           alt: "Facebook logo",
           href: "#",
         },
         {
-          img: "/src/assets/img/footer-twitter.png",
+          // img: "/src/assets/img/footer-twitter.png",
+          img: "../../assets/img/footer-twitter.png",
           alt: "Twitter logo",
           href: "#",
         },
         {
-          img: "/src/assets/img/footer-youtube.png",
+          // img: "/src/assets/img/footer-youtube.png",
+          img: "../../assets/img/footer-youtube.png",
           alt: "Yuotube logo",
           href: "#",
         },
         {
-          img: "/src/assets/img/footer-pinterest.png",
+          // img: "/src/assets/img/footer-pinterest.png",
+          img: "../../assets/img/footer-pinterest.png",
           alt: "Pinterest logo",
           href: "#",
         },
         {
-          img: "/src/assets/img/footer-periscope.png",
+          // img: "/src/assets/img/footer-periscope.png",
+          img: "../../assets/img/footer-periscope.png",
           alt: "Periscope logo",
           href: "#",
         },
@@ -40,7 +50,7 @@ export default {
     <ul class="flex">
       <li v-for="social in linkSocial">
         <a :href="social.href">
-          <img :src="social.img" :alt="social.alt" />
+          <img :src="getImagePath(social.img)" :alt="social.alt" />
         </a>
       </li>
     </ul>

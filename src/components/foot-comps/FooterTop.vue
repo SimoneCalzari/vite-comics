@@ -1,34 +1,44 @@
 <script>
 export default {
+  methods: {
+    getImagePath: function (imgPath) {
+      return new URL(imgPath, import.meta.url).href;
+    },
+  },
   data() {
     return {
       buys: [
         {
+          // path: "/src/assets/img/buy-comics-digital-comics.png",
           path: "/src/assets/img/buy-comics-digital-comics.png",
           text: "digital comics",
           href: "#",
           target: "_self",
         },
         {
-          path: "/src/assets/img/buy-comics-merchandise.png",
+          // path: "/src/assets/img/buy-comics-merchandise.png",
+          path: "../../assets/img/buy-comics-merchandise.png",
           text: "dc merchandise",
           href: "#",
           target: "_self",
         },
         {
-          path: "/src/assets/img/buy-comics-subscriptions.png",
+          // path: "/src/assets/img/buy-comics-subscriptions.png",
+          path: "../../assets/img/buy-comics-subscriptions.png",
           text: "subscription",
           href: "#",
           target: "_self",
         },
         {
-          path: "/src/assets/img/buy-comics-shop-locator.png",
+          // path: "/src/assets/img/buy-comics-shop-locator.png",
+          path: "../../assets/img/buy-comics-shop-locator.png",
           text: "comic shop locator",
           href: "#",
           target: "_self",
         },
         {
-          path: "/src/assets/img/buy-dc-power-visa.svg",
+          // path: "/src/assets/img/buy-dc-power-visa.svg",
+          path: "../../assets/img/buy-dc-power-visa.svg",
           text: "dc power visa",
           href: "#",
           target: "_self",
@@ -45,7 +55,7 @@ export default {
       <ul class="flex">
         <li v-for="merch in buys" class="flex">
           <div class="img-box">
-            <img :src="merch.path" :alt="merch.text" />
+            <img :src="getImagePath(merch.path)" :alt="merch.text" />
           </div>
           <a :href="merch.href" :target="merch.target" class="upper">{{
             merch.text
