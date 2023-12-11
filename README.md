@@ -1,13 +1,13 @@
 # VITE COMICS
 
-## Consegna
+## Consegna Day 1
 
-Riproduzione di un layout(vedi immagine sotto) utilizzando VueJs 3 e Vite tramite la creazione di componenti per le varie parti della pagina.
-
-### Step risoluzione
-
-1. Creazione struttura a blocchi
-2. Popolazione dinamica delle liste e menu usando i dati dei vari componenti
-3. Utilizzo di Sass per rendere la pagina esteticamente gradevole
+Riproduzione di un layout utilizzando VueJs 3 e Vite tramite la creazione di componenti per le varie parti della pagina, in particolare in questo step realizzare il footer e l'header.
 
 ![screenshot esercizio](/src/assets/img/dc-comics-empty-layout.png)
+
+## Consegna Day 2
+
+Aggiungere alla pagina del Day 1 tutto il main e il suo contenuto sfruttando i dati relativi alla varie serie TV forniti tramite file JSON.
+
+![screenshot esercizio](/src/assets/img/dc-comics.png)
