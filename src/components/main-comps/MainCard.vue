@@ -18,7 +18,7 @@ export default {
 
 <style scoped lang="scss">
 .card {
-  width: calc((100% - 150px) / 6);
+  width: calc((100% - 125px) / 6);
   .img-box {
     aspect-ratio: 1 / 1;
     overflow: hidden;
@@ -27,6 +27,7 @@ export default {
     padding: 20px 0;
     color: white;
     font-size: 12px;
+    text-align: left;
   }
 }
 </style>

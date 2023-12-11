@@ -1,8 +1,10 @@
 <script>
 import MainCard from "./MainCard.vue";
+import MainBtnLoad from "./MainBtnLoad.vue";
 export default {
   components: {
     MainCard,
+    MainBtnLoad,
   },
   data() {
     return {
@@ -97,6 +99,7 @@ export default {
 
 <template>
   <section class="container">
+    <h2 class="upper">Current series</h2>
     <div class="cards flex">
       <MainCard
         v-for="anime in animes"
@@ -104,19 +107,28 @@ export default {
         :title="anime.series"
       />
     </div>
+    <div class="row-btn">
+      <MainBtnLoad />
+    </div>
   </section>
 </template>
 
 <style scoped lang="scss">
+@use "../../assets/css/_partials/variables" as *;
+h2 {
+  font-size: 22px;
+  color: white;
+  padding: 10px 25px;
+  background-color: $primary-color;
+  display: inline-block;
+  transform: translateY(-50%);
+}
 .cards {
   flex-wrap: wrap;
-  gap: 30px;
-  padding: 20px 10px;
+  gap: 25px;
+  padding: 10px;
 }
-
-// :deep(h4) {
-//   padding: 20px 0;
-//   color: white;
-//   font-size: 12px;
-// }
+.row-btn {
+  text-align: center;
+}
 </style>
