@@ -17,8 +17,10 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@use "../../assets/scss/partials/variables" as *;
+@use "../../assets/scss/partials/mixins" as *;
 .card {
-  width: calc((100% - 125px) / 6);
+  @include grid($cards-per-row, $main-grid-gap);
   .img-box {
     aspect-ratio: 1 / 1;
     overflow: hidden;

@@ -98,23 +98,26 @@ export default {
 </script>
 
 <template>
-  <section class="container">
-    <h2 class="upper">Current series</h2>
-    <div class="cards flex">
-      <MainCard
-        v-for="anime in animes"
-        :url="anime.thumb"
-        :title="anime.series"
-      />
-    </div>
-    <div class="row-btn">
-      <MainBtnLoad />
+  <section>
+    <div class="container">
+      <h2 class="upper">Current series</h2>
+      <div class="cards flex">
+        <MainCard
+          v-for="anime in animes"
+          :url="anime.thumb"
+          :title="anime.series"
+        />
+      </div>
+      <div class="row-btn">
+        <MainBtnLoad />
+      </div>
     </div>
   </section>
 </template>
 
 <style scoped lang="scss">
 @use "../../assets/scss/partials/variables" as *;
+@use "../../assets/scss/partials/mixins" as *;
 h2 {
   font-size: 22px;
   color: white;
@@ -125,7 +128,7 @@ h2 {
 }
 .cards {
   flex-wrap: wrap;
-  gap: 25px;
+  @include gap($main-grid-gap);
   padding: 10px;
 }
 .row-btn {
